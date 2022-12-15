@@ -19,24 +19,27 @@ int main()
 	cin>>rounds;
 	cout<<"\n**--**--**--**--**--**--**--**--**--**"<<"\n \t\t GAME:"<<"\n**--**--**--**--**--**--**--**--**--**";
 	int player_score=0,computer_score=0;
+	//for how many rounds you want //
 	for(round=1;round<=rounds;round++)
 	{
 		system("cls");
 		
 		int player_choice,computer_choice;
+		//to display runnung round out of total rounds//
 		cout<<"Round no:"<<round<<"/"<<rounds<<endl;
 		cout<<"_*"<<name<<"'s score::"<<player_score;
 		cout<<"\n_*"<<"computers score::"<<computer_score<<endl;
 		cout<<" 1:Rock"<<endl;
 		cout<<" 2:Paper"<<endl;
 		cout<<" 3: scissor"<<endl;
+		//for selecting choice//
 		do
 		{
 			cout<<"select your choice:";
 	    	cin>>player_choice;
 		}
 		while(player_choice !=1 && player_choice !=2 && player_choice!=3 );
-		
+		// for generating random no. for computer//
 		srand(time(0));
 		computer_choice=(rand()%3)+1;
 		

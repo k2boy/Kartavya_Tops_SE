@@ -1,0 +1,11 @@
+CREATE TABLE student
+(
+    roll no int PRIMARY KEY AUTO_INCREMENT not null,
+    name varchar(20) NOT null,
+    branch varchar(30) not null
+    
+);
+INSERT INTO student(name,branch)
+VALUES(jay,computor science),
+(suhani,electronic com),
+(kriti,electronic com)

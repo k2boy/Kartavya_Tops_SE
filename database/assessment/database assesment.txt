@@ -1,0 +1,62 @@
+Create Bank table
+CREATE TABLE Bank (
+branch_id INT PRIMARY KEY,
+branch_name VARCHAR(50),
+branch_city VARCHAR(50)
+);
+
+Create Account holder table
+CREATE TABLE Account_holder (
+account_holder_id INT PRIMARY KEY,
+account_no INT,
+account_holder_name VARCHAR(50),
+city VARCHAR(50),
+contact VARCHAR(50),
+date_of_account_created DATE,
+account_status VARCHAR(10),
+account_type VARCHAR(50),
+balance DECIMAL(10, 2)
+);
+
+Create Loan table
+CREATE TABLE Loan (
+loan_no INT PRIMARY KEY,
+branch_id INT,
+account_holder_id INT,
+loan_amount DECIMAL(10, 2),
+loan_type VARCHAR(50),
+FOREIGN KEY (branch_id) REFERENCES Bank(branch_id),
+FOREIGN KEY (account_holder_id) REFERENCES Account_holder(account_holder_id)
+);
+
+Make an intra bank transfer of $100 from account A to B
+BEGIN TRANSACTION;
+
+UPDATE Account_holder SET balance = balance - 100 WHERE account_no = 'A';
+UPDATE Account_holder SET balance = balance + 100 WHERE account_no = 'B';
+
+COMMIT;
+
+Update account information after the transaction
+UPDATE Account_holder SET account_status = 'Terminated' WHERE balance <= 0;
+
+Fetch details of account holders from the same city
+SELECT * FROM Account_holder WHERE city = 'city_name';
+
+Fetch account number and account holder name whose accounts were created after 15th of any month
+SELECT account_no, account_holder_name
+FROM Account_holder
+WHERE DATEPART(day, date_of_account_created) > 15;
+
+Display city name and count the branches in that city
+SELECT branch_city, COUNT(branch_id) AS Count_Branch
+FROM Bank
+GROUP BY branch_city;
+
+Display account holder’s id, account holder’s name, branch id, and loan amount for people who have taken loans
+SELECT ah.account_holder_id, ah.account_holder_name, l.branch_id, l.loan_amount
+FROM Account_holder ah
+JOIN Loan l ON ah.account_holder_id = l.account_holder_id;
+
+
+

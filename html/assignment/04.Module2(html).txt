@@ -1,0 +1,32 @@
+Q1. Define the terms: Website
+
+Ans. A website is a collection of linked web pages (plus their associated resources) that share a unique domain name. Each web page of a given website provides explicit links—most of the time in the form of clickable portions of text—that allow the user to move from one page of the website to another.
+
+To access a website, type its domain name in your browser address bar, and the browser will display the website's main web page, or homepage (casually referred as "the home"):
+
+Q2. Define the term, Webpage,
+
+
+Ans. A webpage is a document written in HTML and can be viewed on any web browser. It is contained within the web server, which can be accessed by entering the URL for that web page, and once it is loaded, it appears on the user's web browser. Each webpage is linked with a unique URL; hence two pages cannot have the same URL.
+
+Q3. Web browser
+
+
+Ans. The web browser is an application software to explore www (World Wide Web). It provides an interface between the server and the client and requests to the server for web documents and services. It works as a compiler to render HTML which is used to design a webpage. Whenever we search anything on the internet, the browser loads a web page written in HTML, including text, links, images, and other items such as style sheets and JavaScript functions. Google Chrome, Microsoft Edge, Mozilla Firefox, Safari are examples of web browsers.
+
+Q. Web servers 
+
+Ans Web server is a computer where the web content is stored. Basically web server is used to host the web sites but there exists other web servers also such as gaming, storage, FTP, email etc.
+
+Web site is collection of web pages whileweb server is a software that respond to the request for web resources.
+
+Q. Define term HTML
+
+HTML is an acronym which stands for Hyper Text Markup Language which is used for creating web pages and web applications. Let's see what is meant by Hypertext Markup Language, and Web page.
+
+Q. Define term CSS
+
+CSS stands for Cascading Style Sheets
+CSS describes how HTML elements are to be displayed on screen, paper, or in other media
+CSS saves a lot of work. It can control the layout of multiple web pages all at once
+External stylesheets are stored in CSS files

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5</title>
+    <style>
+        body{
+            background-color: lightgoldenrodyellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Q1. New tags in HTML</h1> 
+    <ul>
+        <li>Header</li>
+        <li>Seaction</li>
+        <li>Footer</li>
+        <li>Nav</li>
+    </ul>
+    <hr> <hr>
+    <h1>Q2. Audio Tag in HTML5</h1>
+    <p>The tag is used to embed sound content in a document, such as music or other audio streams.</p>
+    <audio src="audio/mixkit-tech-house-vibes-130.mp3" controls="" loop="">
+
+    </audio> 
+
+    <h1> Video Tag in HTML</h1>
+    <p>The video HTML element embeds a media player which supports video playback into the document.</p>
+    <video src="audio/mixkit-curvy-road-on-a-tree-covered-hill-41537-medium.mp4" controls="" loop="" muted="" height="200px" autoplay=""></video> <hr> <hr>
+
+    <h1>Q3. Semantic Tag in HTML5</h1>
+    <p>Semantic HTML tags are tags that define the meaning of the content they contain.</p>
+    <h2>They Are Follow</h2>
+    <ul>
+        <li>Header</li>
+        <li>Footer</li>
+        <li>Aside</li>
+        <li>Paragraph</li>
+        <li>Seaction</li>
+    </ul>
+     <hr> <hr>
+
+     <h1>Q4.  SVG And Canvas</h1>
+
+     <h2>SVG</h2>
+     <svg
+     version="1.1"
+     width="300"
+     height="200">
+     <rect width="100%" height="100%"  fill="red" />
+     <!-- <rect width="100%" height="100%"  stroke="teal" fill="transparent" /> -->
+
+
+     <circle cx="150" cy="100" r="80" fill="green" />
+
+     <text x="150" y="125" font-size="60" text-anchor="middle" fill="white">SVG</text>
+   </svg>
+   <hr>
+
+   <h2>Canvas</h2>
+   <p>Canvas draws 2D graphics, on the fly (with a JavaScript). Canvas has several methods for drawing paths, boxes, circles, text, and adding images.</p>
+   <canvas width="120" height="120">
+    An alternative text describing what your canvas displays.
+  </canvas>
+<script>
+  const canvas = document.querySelector("canvas");
+  const ctx = canvas.getContext("2d");
+  ctx.fillStyle = "blue";
+  // Add a rectangle at (10, 10) with size 100x100 pixels
+  ctx.fillRect(20, 10, 200, 100);
+</script>
+<hr>
+<hr>
+
+</body>
+</html>

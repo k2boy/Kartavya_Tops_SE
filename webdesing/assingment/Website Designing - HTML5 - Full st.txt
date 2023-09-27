@@ -1,0 +1,144 @@
+						Website Designing - HTML5 - Full stack
+
+Q1 What are the new tags added in HTML5?
+
+Ans HTML5 introduced several new elements to the HTML specification to enhance the structure and semantics of web documents. These new elements help developers create more accessible, meaningful, and well-organized web pages. Here are some of the key new elements added in HTML5:
+
+<header>:
+
+The <header> element represents introductory content at the beginning of a section or webpage.
+<nav>:
+
+The <nav> element represents a section of a webpage that contains navigation links, menus, or other navigation-related content.
+<main>:
+
+The <main> element represents the main content of a document, excluding headers, footers, and sidebars.
+<article>:
+
+The <article> element defines a self-contained, independent piece of content, such as a blog post, news article, or forum post.
+<section>:
+
+The <section> element represents a thematic grouping of content within a document, such as chapters, tabs, or segments.
+<aside>:
+
+The <aside> element is used for content that is tangentially related to the content around it. It is often used for sidebars, pull quotes, or advertisements.
+<figure> and <figcaption>:
+
+The <figure> element is used to encapsulate content that is referenced from the main content, such as images, diagrams, or charts. The <figcaption> element provides a caption or description for the content within a <figure>.
+<footer>:
+
+The <footer> element represents a footer for a section or the entire page. It typically contains copyright information, contact details, or other metadata.
+<time>:
+
+The <time> element is used to represent dates, times, or durations. It helps provide machine-readable date and time information.
+<mark>:
+
+The <mark> element highlights or marks text within a document to indicate relevance or emphasis. It is often used for search results or annotations.
+<progress>:
+
+The <progress> element represents the completion progress of a task. It is commonly used for progress bars and indicators.
+<meter>:
+
+The <meter> element represents a measurement within a known range. It is used for gauges, ratings, and other data measurements.
+<details> and <summary>:
+
+The <details> element creates a disclosure widget that can be toggled open or closed to reveal additional content. The <summary> element provides a label or heading for the disclosure widget.
+<dialog>:
+
+The <dialog> element represents a dialog or modal window. It is used for pop-up messages, alerts, and interactive dialogs.
+<datalist> and <option>:
+
+The <datalist> element provides a list of predefined options for an <input> element with a text field. <option> elements within the <datalist> represent individual options.
+
+Q2 How to embed audio and video in a webpage? 
+
+Ans To embed audio and video in a webpage, you can use the <audio> and <video> elements in HTML. These elements allow you to include multimedia content directly within your web pages. Here's how to embed audio and video:
+
+Embedding Audio:
+
+Using the <audio> Element:
+To embed audio, you can use the <audio> element and specify the source (audio file) using the src attribute. You can also include optional attributes like controls to provide playback controls to users.
+
+The controls attribute adds audio playback controls (play, pause, volume, etc.).
+Multiple <source> elements with different file formats (e.g., MP3, Ogg) allow for compatibility across browsers.
+Fallback Content:
+The text "Your browser does not support the audio element." is included within the <audio> element. It serves as fallback content in case the browser does not support audio playback.
+
+Embedding Video:
+
+Using the <video> Element:
+To embed video, use the <video> element and specify the video source (video file) using the src attribute. As with audio, you can include the controls attribute to provide video playback controls.
+
+The controls attribute adds video playback controls (play, pause, volume, etc.).
+Like with audio, you can include multiple <source> elements with different file formats for broader browser compatibility.
+Fallback Content:
+The text "Your browser does not support the video element." is included within the <video> element to provide fallback content.
+
+Q3 Semantic element in HTML5? 
+
+Ans Semantic elements in HTML5 are specific HTML elements that carry meaning about the structure and content of a web page. These elements help define the hierarchy and purpose of different parts of a webpage, making it more accessible and understandable for both humans and machines (such as search engines and screen readers). Semantic HTML elements contribute to better SEO (Search Engine Optimization) and improved web accessibility. Here are some of the key semantic elements introduced in HTML5:
+
+<header>:
+
+Represents the introductory content at the beginning of a section or webpage.
+<nav>:
+
+Represents a section of a webpage that contains navigation links, menus, or other navigation-related content.
+<main>:
+
+Represents the main content of a document, excluding headers, footers, and sidebars.
+<article>:
+
+Defines a self-contained, independently distributable piece of content, such as a blog post, news article, or forum post.
+<section>:
+
+Represents a thematic grouping of content within a document, such as chapters, tabs, or segments.
+<aside>:
+
+Used for content that is tangentially related to the content around it. Often used for sidebars, pull quotes, or advertisements.
+<figure> and <figcaption>:
+
+<figure> is used to encapsulate content that is referenced from the main content, such as images, diagrams, or charts. <figcaption> provides a caption or description for the content within a <figure>.
+<footer>:
+
+Represents a footer for a section or the entire page. Typically contains copyright information, contact details, or other metadata.
+<time>:
+
+Used to represent dates, times, or durations. Helps provide machine-readable date and time information.
+<mark>:
+
+Highlights or marks text within a document to indicate relevance or emphasis. Often used for search results or annotations.
+<progress>:
+
+Represents the completion progress of a task. Commonly used for progress bars and indicators.
+<meter>:
+
+Represents a measurement within a known range. Used for gauges, ratings, and other data measurements.
+<details> and <summary>:
+
+<details> creates a disclosure widget that can be toggled open or closed to reveal additional content. <summary> provides a label or heading for the disclosure widget.
+<dialog>:
+
+Represents a dialog or modal window. Used for pop-up messages, alerts, and interactive dialogs.
+<datalist> and <option>:
+
+<datalist> provides a list of predefined options for an <input> element with a text field. <option> elements within the <datalist> represent individual options.
+Using semantic elements in HTML5 not only helps organize the structure of a webpage but also improves its accessibility and search engine ranking. When web developers use semantic elements correctly, it becomes easier for assistive technologies, like screen readers, to understand and navigate the content. Additionally, search engines can better interpret and index the content, leading to improved SEO.
+
+Q4 Canvas and SVG tags ?
+
+Ans The <canvas> and <svg> tags are two HTML elements used for rendering graphics on web pages. They serve different purposes and have distinct characteristics:
+
+1. <canvas> Element:
+
+The <canvas> element is a HTML5 element that provides a drawing surface on which you can use JavaScript to draw graphics dynamically. It's essentially a blank canvas where you can create and manipulate graphics using JavaScript's 2D or 3D drawing APIs.
+
+Key features of the <canvas> element:
+
+Dynamic Drawing: You use JavaScript to draw and manipulate graphics on the canvas in real-time. This makes it suitable for animations, interactive games, data visualizations, and more.
+
+Pixel-Based: Graphics on a <canvas> are pixel-based. You draw shapes, lines, and images pixel by pixel. This allows for precise control but can be less flexible than vector graphics.
+
+No Built-in Scalability: Unlike SVG, the content on a <canvas> doesn't automatically scale to different screen sizes and resolutions. You need to manually adjust your drawings based on the canvas size.
+
+No Native Accessibility: Since the content drawn on a <canvas> is generated dynamically, it doesn't have built-in accessibility features. Developers need to handle accessibility themselves.

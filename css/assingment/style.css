@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    background-image: url(image/backgroundimage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.logo{
+    margin-left: 100px;
+}
+.navbar{
+    display: flex;
+}
+.home{
+    margin-left: 100px;
+}
+.navbar a{
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    padding-left: 80px;
+    padding-top: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.text p{
+    text-align: center;
+    padding-top: 150px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size: 20px;
+}
+.text h1{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 50px;
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+
+.para p{
+    color: white;
+    padding: 1px 450px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button{
+    color: white;
+    background-color: tomato;
+    font-size: 12px;
+    margin-top: 50px;
+    margin-left: 36%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 30px;
+    width: 200px;
+    border: 0 solid transparent;
+}
+.learnmore{
+    color: white;
+    background: transparent;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 30px;
+    width: 200px;
+    margin-left: 20px;
+}
+
+/* 2ns page */
+.container-1{
+    background-color: rgb(40, 39, 39);
+    display: flex;
+
+}
+.main-div-1{
+    display: flex;
+}
+.title{
+    padding-left: 30%;
+}
